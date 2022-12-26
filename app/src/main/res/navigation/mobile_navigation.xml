@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_shopping">
+
+    <fragment
+        android:id="@+id/navigation_order"
+        android:name="com.mckproject.demoshop.ui.order.OrderFragment"
+        android:label="@string/my_order"
+        tools:layout="@layout/fragment_order" >
+        <action
+            android:id="@+id/action_navigation_order_to_orderDetailFragment"
+            app:destination="@id/orderDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_shopping"
+        android:name="com.mckproject.demoshop.ui.shopping.ShoppingFragment"
+        android:label="@string/shopping"
+        tools:layout="@layout/fragment_shopping" >
+        <action
+            android:id="@+id/action_navigation_shopping_to_navigation_product_detail"
+            app:destination="@id/navigation_product_detail" />
+        <action
+            android:id="@+id/action_navigation_shopping_to_cartFragment"
+            app:destination="@id/cartFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_personal"
+        android:name="com.mckproject.demoshop.ui.profile.PersonalFragment"
+        android:label="@string/profile"
+        tools:layout="@layout/fragment_personal" >
+        <action
+            android:id="@+id/action_navigation_personal_to_adressFragment"
+            app:destination="@id/adressFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_product_detail"
+        android:name="com.mckproject.demoshop.ui.shopping.product_detail.ProductDetailFragment"
+        android:label="@string/description"
+        tools:layout="@layout/fragment_product_detail" >
+        <argument
+            android:name="productId"
+            app:argType="com.mckproject.demoshop.ui.data.product.Product"/>
+        <action
+            android:id="@+id/action_navigation_product_detail_to_cartFragment"
+            app:destination="@id/cartFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/cartFragment"
+        android:name="com.mckproject.demoshop.ui.cart.CartFragment"
+        android:label="cart"
+        tools:layout="@layout/fragment_cart" >
+        <action
+            android:id="@+id/action_cartFragment_to_navigation_shopping"
+            app:destination="@id/navigation_shopping" />
+        <action
+            android:id="@+id/action_cartFragment_to_adressFragment"
+            app:destination="@id/adressFragment" />
+        <action
+            android:id="@+id/action_cartFragment_to_navigation_order"
+            app:destination="@id/navigation_order" />
+    </fragment>
+    <fragment
+        android:id="@+id/adressFragment"
+        android:name="com.mckproject.demoshop.ui.profile.adress.AddressFragment"
+        android:label="@string/addresses"
+        tools:layout="@layout/fragment_adress" >
+        <argument
+            android:name="pickAddress"
+            app:argType="boolean"/>
+        <action
+            android:id="@+id/action_adressFragment_to_addAddressFragment"
+            app:destination="@id/addAddressFragment" />
+        <action
+            android:id="@+id/action_adressFragment_to_navigation_personal"
+            app:destination="@id/navigation_personal" />
+    </fragment>
+    <fragment
+        android:id="@+id/addAddressFragment"
+        android:name="com.mckproject.demoshop.ui.profile.adress.addone.AddAddressFragment"
+        android:label="@string/add_address"
+        tools:layout="@layout/fragment_add_address" />
+    <fragment
+        android:id="@+id/orderDetailFragment"
+        android:name="com.mckproject.demoshop.ui.order.orderDetail.OrderDetailFragment"
+        android:label="@string/order_details"
+        tools:layout="@layout/fragment_order_detail">
+        <argument
+            android:name="orderDetail"
+            app:argType="com.mckproject.demoshop.ui.order.Order"/>
+        <action
+            android:id="@+id/action_orderDetailFragment_to_navigation_order"
+            app:destination="@id/navigation_order" />
+    </fragment>
+</navigation>

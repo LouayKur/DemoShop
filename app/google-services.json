@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "678736215168",
+    "project_id": "fir-shop-1c619",
+    "storage_bucket": "fir-shop-1c619.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:678736215168:android:d412a79c4b3290c48aba65",
+        "android_client_info": {
+          "package_name": "com.mckproject.demoshop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "678736215168-pu0jj2bi0cnl0mltche47pii4812ab86.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mckproject.demoshop",
+            "certificate_hash": "783d337863726d05c4ac7ef50c5a28da2a5bd4a4"
+          }
+        },
+        {
+          "client_id": "678736215168-ue8gpodp6c9m74fgkns4v642dr1nk4b3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCsjmyU97Tizuf035KRGC3O7D7r8RhoNRw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "678736215168-ue8gpodp6c9m74fgkns4v642dr1nk4b3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

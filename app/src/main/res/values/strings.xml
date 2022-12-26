@@ -1,0 +1,106 @@
+<resources>
+    <string name="app_name">Demo Shop</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_login">Login</string>
+    <string name="title_login_bold"><b>LOGIN</b></string>
+
+    <string name="email_hint">Email ID</string>
+    <string name="password_hint">Password</string>
+    <string name="dont_have_accounr">Don\'t have an account?  </string>
+    <string name="register"><b>Register</b></string>
+
+    <string name="create_account"><b>CREATE AN ACCOUNT</b></string>
+    <string name="lstname">Last name</string>
+    <string name="frstname">First name</string>
+    <string name="confirm_pwd">Confirm Password</string>
+    <string name="have_account">Already have an account?</string>
+    <string name="login"><b>Login</b></string>
+
+    <string name="erroe_frst_name">Please enter the first name</string>
+    <string name="erroe_last_name">Please enter the last name</string>
+    <string name="erroe_email">Please enter a correct Email ID</string>
+    <string name="erroe_pwd">Please enter a Password</string>
+    <string name="erroe_confirm_pwd">Incorrect Confirmation Password</string>
+    <string name="succes_register">You are registered successfully</string>
+    <string name="waite">Please Wait..</string>
+
+    <string name="logged_in">You are logged in successfully</string>
+
+    <string name="my_order">Orders</string>
+    <string name="shopping">Shopping</string>
+    <string name="profile">Profile</string>
+    <string name="cart_menu">Shopping Cart</string>
+    <string name="logut"><b>Logout</b></string>
+    <string name="adresses"><b>Adresses</b></string>
+
+    <string name="description">Description</string>
+
+
+    <string name="product_name">Product Title</string>
+    <string name="product_price">Product Price</string>
+    <string name="product_status">Available</string>
+
+    <string name="addtocart">Add to Cart</string>
+
+    <string name="quantity">Qty</string>
+    <string name="quan">Qty: </string>
+    <string-array name="qty_array">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+
+    <string name="Total_price">Total price</string>
+    <string name="place_order">Place Order</string>
+    <string name="name">Name</string>
+    <string name="street">Street</string>
+    <string name="plz">Postcode</string>
+    <string name="city">City</string>
+    <string name="country">Country</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="last_name">Last name</string>
+    <string name="streetandNumber">Street and House number</string>
+    <string name="save_address">Save Address</string>
+    <string name="addresses">Addresses</string>
+    <string name="add_address">Add Address</string>
+
+    <string-array name="Countries">
+        <item>Deutschland</item>
+        <item>Netherlands</item>
+        <item>Austria</item>
+    </string-array>
+
+    <string name="erroe_entr_street">Please enter the Street and house number</string>
+    <string name="erroe_plz">Please enter the Post Code</string>
+    <string name="erroe_city">Please enter the City</string>
+    <string name="address_added">Address added successfully</string>
+    <string name="ahipping_to">Shipping to:</string>
+
+
+
+    <string name="add_item_to_cart">Please add Items to the Cart to place Order</string>
+    <string name="choose_an_address">Please choose an Address</string>
+    <string name="processing">in Processing</string>
+    <string name="order_placed">Your Order saved successfully</string>
+    <string name="order_failed">Oops saving Failed</string>
+    <string name="total_price">Total Price</string>
+    <string name="date">Date: </string>
+    <string name="state">State: </string>
+    <string name="order_details">Order Details</string>
+    <string name="storge_permission_granted">The Storage Permission is granted</string>
+    <string name="storge_permission_denied">Storage Permission denied</string>
+    <string name="permission_denied">Permission denied</string>
+    <string name="profile_updated">Profile updated successfuly</string>
+    <string name="updating_faild">Updating Failed</string>
+    <string name="search">search</string>
+</resources>

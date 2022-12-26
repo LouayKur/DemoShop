@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_constraintTop_toBottomOf="parent"
+    tools:context=".ui.profile.PersonalFragment">
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/shape_height"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:contentDescription="backgroung"
+            android:src="@drawable/btn_background" />
+        <ImageView
+            android:id="@+id/personal_photo"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:contentDescription="logo"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginEnd="80dp"
+            android:src="@drawable/ic_person_24"
+            android:background="@drawable/border_personal_image"
+            android:layout_gravity="center"/>
+
+    </FrameLayout>
+
+
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/frameLayout">
+
+            <TextView
+                android:id="@+id/text_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:hint="@string/frstname"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:id="@+id/text_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="25dp"
+                android:gravity="center"
+                android:textSize="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text_name"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+                android:hint="@string/email_hint"
+                />
+
+            <LinearLayout
+                android:id="@+id/btn_logout"
+                android:foreground="?attr/selectableItemBackground"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="100dp"
+                android:paddingVertical="10dp"
+                android:layout_marginTop="36dp"
+                android:background="@drawable/btn_background"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/linear_adresses"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/logut"
+                    android:textSize="20sp"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+                    android:textColor="@color/white"
+                    android:gravity="center"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_logout_24"
+                    android:layout_marginStart="8dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_adresses"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:foreground="?attr/selectableItemBackground"
+                android:paddingHorizontal="100dp"
+                android:paddingVertical="10dp"
+                android:background="@drawable/grey_border"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text_email"
+                android:layout_marginTop="25dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/adresses"
+                    android:textColor="@color/black"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+                    android:textSize="16sp"/>
+                <ImageView
+                    android:src="@drawable/ic_arrow_forward_24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp" />
+            </LinearLayout>
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

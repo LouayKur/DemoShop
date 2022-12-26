@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/search_icon"
+        android:title="@string/search"
+        android:icon="@drawable/ic_search_24"
+        app:showAsAction="always|collapseActionView"
+        android:visible="false"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        />
+
+    <item android:id="@+id/cartFragment"
+        android:icon="@drawable/ic_shopping_cart_24"
+        android:title="@string/cart_menu"
+        app:showAsAction="always"
+        android:visible="true"
+        app:actionLayout="@layout/cart_with_number"/>
+
+
+</menu>
